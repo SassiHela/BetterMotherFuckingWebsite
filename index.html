@@ -3,14 +3,47 @@
 <head>
 	<title>Better Motherfucking Website</title><style type="text/css">body{margin:40px auto;max-width:650px;line-height:1.6;
 	font-size:18px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2}</style>
+	
+	<script type="text/javascript">
+		//Traitement
+		setTimeout(AppelPopup, 10000); //On attend 10 secondes avant l'apparition du pop up 
+		function AppelPopup()
+		{
+			if (confirm("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please")) {
+			
+				document.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";  // passer au nouveau URL
+				
+			} else {
+				//rien ne se passe
+			}
+		}
+		function ClickMe(){ 
+			//Changer la couleur de background de la page en magenta.
+			document.body.style.background = 'magenta';
+			
+			// Sélectionne tous les élements p du document
+			let paragraphes = document.getElementsByTagName('p');
+			for (valeur of paragraphes){
+				valeur.style.color 		= 'blue';
+				valeur.style.fontFamily	= 'courier';
+			}
+			
+			// Sélectionne tous les élements header du document
+			let headers = document.getElementsByTagName('header');
+			for (valeur of headers){
+				valeur.style.color 		= 'green';
+				valeur.style.fontFamily	= 'Comic Sans MS';
+			} 
+		}
+	</script>
 </head>
 
 <body>
-	
+	<button type="button" onclick="ClickMe()">Click for more colors!</button>
 	<header>
 		<h1>This is <em>still</em> a motherfucking website.</h1>
 		<aside>And it's more fucking perfect than the last guy's.</aside>
-</header>
+	</header>
 		<h2>Seriously, it takes minimal fucking effort to improve this shit.</h2>
 		
 		<p><strong>7 fucking declarations.</strong></p>
@@ -74,18 +107,6 @@ they're also fucking ugly. You and all the other web designers out there need to
 		<a href="https://twitter.com/drew_mc">me</a> with help from 
 		<a href="https://twitter.com/gabehammersmith">him</a>.
 		</p>
-
-<script type="text/javascript">
-		if (confirm("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please")) {
-			
-			document.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"; 
 				
-		} else {
-			txt = "You pressed Cancel!";
-		}
-		
-		
-		
-</script>		
 </body>
 </html>
